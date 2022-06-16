@@ -3,6 +3,7 @@
 This project uses
  - eleventy (for the build)
  - laravel mix (for asset management)
+ - Bulma for styling and scss
 
 To run in dev mode
  - npm run dev
