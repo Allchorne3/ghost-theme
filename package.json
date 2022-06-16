@@ -1,0 +1,35 @@
+{
+  "name": "eleventy-blog-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "scripts": {
+    "dev:11ty": "eleventy --serve",
+    "build:11ty": "eleventy",
+    "dev:assets": "mix watch",
+    "build:assets": "mix --production",
+    "dev": "concurrently --kill-others \"npm run dev:assets\" \"npm run dev:11ty\"",
+    "production": "npm run build:11ty && npm run build:assets"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Allchorne3/eleventy-blog-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Allchorne3/eleventy-blog-template/issues"
+  },
+  "homepage": "https://github.com/Allchorne3/eleventy-blog-template#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "bulma": "^0.9.4",
+    "concurrently": "^7.2.1",
+    "helper-moment": "^0.2.0",
+    "laravel-mix": "^6.0.45",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.52.2",
+    "sass-loader": "^12.1.0"
+  }
+}

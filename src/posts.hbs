@@ -1,0 +1,11 @@
+---
+layout: base.hbs
+permalink: /posts/
+---
+
+<ul>
+  {{reverse collections.post}}
+  {{#each collections.post}}
+    {{> posts-snippet}}
+  {{/each}}
+</ul>
